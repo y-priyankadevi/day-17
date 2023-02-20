@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main(){
+	int i,n,h=1,sh=1,num;
+	scanf("%d",&n);
+	for(i=1;i<=n;i++){
+		scanf("%d",&num);
+		if(num>h){
+		sh=h;
+		h=num;
+	}
+		else if(num>sh&&num!=h)
+		sh=num;
+		
+	}
+	printf("second highest:%d",sh);
+}
